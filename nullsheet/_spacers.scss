@@ -1,0 +1,38 @@
+@import 'medias';
+
+$spacers: (
+  "m": "margin",
+  "p": "padding",
+);
+
+@each $m, $media in $medias {
+  @media #{$media} {
+    @each $s, $spacer in $spacers {
+      @for $i from 0 through 12 {
+        .#{$m}#{$s}#{$i} {
+          #{$spacer}: calc(#{$i} * var(--spacer));
+        }
+        .#{$m}#{$s}#{$i}l {
+          #{$spacer}-left: calc(#{$i} * var(--spacer));
+        }
+        .#{$m}#{$s}#{$i}r {
+          #{$spacer}-right: calc(#{$i} * var(--spacer));
+        }
+        .#{$m}#{$s}#{$i}x {
+          #{$spacer}-left: calc(#{$i} * var(--spacer));
+          #{$spacer}-right: calc(#{$i} * var(--spacer));
+        }
+        .#{$m}#{$s}#{$i}t {
+          #{$spacer}-top: calc(#{$i} * var(--spacer));
+        }
+        .#{$m}#{$s}#{$i}b {
+          #{$spacer}-bottom: calc(#{$i} * var(--spacer));
+        }
+        .#{$m}#{$s}#{$i}y {
+          #{$spacer}-top: calc(#{$i} * var(--spacer));
+          #{$spacer}-bottom: calc(#{$i} * var(--spacer));
+        }
+      }
+    }  
+  }
+}

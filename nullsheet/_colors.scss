@@ -1,0 +1,39 @@
+@import 'medias';
+
+$colors: (
+  "0": "lighest",
+  "1": "light",
+  "2": "primary-light",
+  "3": "primary",
+  "4": "primary-dark",
+  "5": "secondary-light",
+  "6": "secondary",
+  "7": "secondary-dark",
+  "8": "success",
+  "9": "warning",
+  "10": "danger",
+  "11": "dark",
+  "12": "darkest"
+);
+
+$props: (
+  "bc": "border-color",
+  "bg": "background-color",
+  "c": "color"
+);
+
+@each $m, $media in $medias {
+  @media #{$media} {
+    @each $p, $prop in $props {
+      @each $c, $color in $colors {
+        .#{$m}#{$p}#{$c} {
+          #{$prop}: var(--#{$color}-color);
+          @if $p == "bc" {
+            border-width: 1px;
+            border-style: solid;
+          }
+        }
+      }
+    }
+  }
+}
