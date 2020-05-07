@@ -5,7 +5,7 @@ class Media extends Nullstack {
   renderPost() {
     return (
       <div class="xl">
-        <h3 class="c12"> Titulo do Post </h3>
+        <h3 class="f4"> Titulo do Post </h3>
         <p class="c11"> Lorem ipsum dolor sit amet consectur adipiscing elit integer </p>
         <a href="/" class="c6"> Leia mais </a>
       </div>
@@ -57,29 +57,19 @@ class Media extends Nullstack {
     )
   }
 
-  renderTag() {
-    return (
-      <a href="/" class="x0 p1y p2x m1x bg3 c0"> #nullstack </a>
-    )
-  }
-
   renderTags() {
+    const tags = ['nullstack', 'nullsheet', 'poisonicon', 'under-the-hood', 'descontentamentos', 'novidades'];
     return (
       <div class="xx m4t">
-        <Tag />
-        <Tag />
-        <Tag />
-        <Tag />
-        <Tag />
-        <Tag />
+        {tags.map((tag) => <a href={`https://codase.com.br/blog/${tag}`}>#{tag}</a>)}
       </div>
     )
   }
 
   render() {
     return (
-      <section class="xxx p4y p2x">
-        <h1 class="c3"> Mídia </h1>
+      <section class="xxx p12y p2x">
+        <h3 class="xx m2b c3 f6"> Quem manja faz parecer simples, não enrola e compartilha! </h3>
         <Posts />
         <Channels />
         <Tags />

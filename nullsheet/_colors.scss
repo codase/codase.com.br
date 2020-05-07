@@ -33,7 +33,41 @@ $props: (
             border-style: solid;
           }
         }
+        @if $p == "bc" {
+          .#{$m}#{$p}#{$c}b {
+            border-bottom-color: var(--#{$color}-color);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+          }
+          .#{$m}#{$p}#{$c}t {
+            border-top-color: var(--#{$color}-color);
+            border-top-width: 1px;
+            border-top-style: solid;
+          }
+          .#{$m}#{$p}#{$c}l {
+            border-left-color: var(--#{$color}-color);
+            border-left-width: 1px;
+            border-left-style: solid;
+          }
+          .#{$m}#{$p}#{$c}r {
+            border-right-color: var(--#{$color}-color);
+            border-right-width: 1px;
+            border-right-style: solid;
+          }
+          .#{$m}#{$p}#{$c}x {
+            @extend .#{$m}#{$p}#{$c}r;
+            @extend .#{$m}#{$p}#{$c}l;
+          }
+          .#{$m}#{$p}#{$c}y {
+            @extend .#{$m}#{$p}#{$c}t;
+            @extend .#{$m}#{$p}#{$c}b;
+          }
+        }
       }
     }
   }
+}
+
+body {
+  @extend .c12;
 }

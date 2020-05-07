@@ -10,11 +10,11 @@ class Header extends Nullstack {
             Logo
           </div>
           <nav class="xr x6">
-            <a href="/" class="x0 p1x p2y"> Sobre </a>
-            <a href="/" class="x0 p1x p2y"> Open Source </a>
-            <a href="/" class="x0 p1x p2y"> Mídia </a>
-            <a href="/" class="x0 p1x p2y"> Equipe </a>
-            <a href="/" class="x0 p1x p2y"> Contato </a>
+            <a href="/" class="x0 p1x p2y c3"> Sobre </a>
+            <a href="/" class="x0 p1x p2y c3"> Open Source </a>
+            <a href="/" class="x0 p1x p2y c3"> Mídia </a>
+            <a href="/" class="x0 p1x p2y c3"> Equipe </a>
+            <a href="/" class="x0 p1x p2y c3"> Contato </a>
           </nav>
         </div>
       </header>

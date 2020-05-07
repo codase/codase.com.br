@@ -2,15 +2,16 @@ import Nullstack from 'nullstack';
 
 class OpenSource extends Nullstack {
 
-  renderNullsheet() {
+  renderProject({logo, title, description, objective, source, docs}) {
     return (
-      <div class="xx md+x4 p1 m2t">
-        <div class="xx bg1 p3">
-          <p class="xx p2y c12"> Texto sobre o nullsheet, nosso framework de css </p>
+      <div class="xx md+x4 p1 sm-m2b">
+        <div class="xx bg4 p3y p6x">
+          <p class="xx p1y c0 bc2b"> {description} </p>
+          <small class="xx p1y c0"> {objective} </small>
           <div class="xx">
-            <a href="/" class="xx x0 c3 p1x"> Source </a>
-            <a href="/" class="xx x0 c3 p1x"> Docs </a>
-            <a href="/" class="xx x0 c3 p1x"> Blog </a>
+            <a href={source} class="xx x0 c6 p1x"> Source </a>
+            <span class="c0 x0"> & </span>
+            <a href={docs} class="xx x0 c6 p1x"> Docs </a>
           </div>
         </div>
       </div>
@@ -19,19 +20,37 @@ class OpenSource extends Nullstack {
 
   render() {
     return (
-      <section class="xxx p4y p2x">
-        <h1 class="xx c3"> Titulo do Open Source </h1>
-        <p class="xx c12"> 
-          Nós vendemos resultado mas nos importamos com tecnologia.
-        </p>
-        <p class="xx c12"> 
-          Quando falamos que usamos tecnologias modernas,
-          nos referimos a frameworks que nos mesmos criamos
-          (obviamente tem que trocar essa frase soh queria o espaço)
-        </p>
-        <Nullsheet />
-        <Nullsheet />
-        <Nullsheet />
+      <section class="p12y p2x bg3">
+        <div class="xxx">
+          <h2 class="xx c0 f6 m3b"> Papo reto, Código aberto </h2>
+          <p class="xx c0"> 
+            Não tem segredo nenhum, nossa experiência nos levou a criar ferramentas que nos tornam mais produtivos.
+          </p>
+          <p class="xx c0 m3b"> 
+            Sabemos quando é hora de reinventar a roda e não temos medo de compartilhar nossas descobertas.
+          </p>
+          <Project
+            title="Nullsheet"
+            description="More style less bullshit"
+            objective="Reinventamos a roda para acelerar nosso workflow"
+            source="https://github.com/nullsheet/nullsheet"
+            docs="https://github.com/nullsheet/nullsheet"
+          />
+          <Project 
+            title="Nullstack"
+            description="Fullstack components for one man armies"
+            objective="Reinventamos a roda porque as outras eram meio quadradas"
+            source="https://github.com/nullstack/nullstack"
+            docs="https://github.com/nullstack/nullstack"
+          />
+          <Project 
+            title="Nullsheet"
+            description="More style less bullshit"
+            objective="Reinventamos a roda para acelerar nosso workflow"
+            source="https://github.com/nullstack/nullstack"
+            docs="https://github.com/nullstack/nullstack"
+          />
+        </div>
       </section>
     )
   }
