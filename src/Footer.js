@@ -4,7 +4,7 @@ class Footer extends Nullstack {
 
   render() {
     return (
-      <section class="xx bg1">
+      <section class="p4y p2x p12t bg1" style="background: url(/hero.svg) center; height: 800px;">
         <div class="xxx p2">
           <div class="xl md+x2">
             <a href="/" class="c12">Logo</a>

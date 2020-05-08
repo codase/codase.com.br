@@ -2,32 +2,33 @@ import Nullstack from 'nullstack';
 
 class Army extends Nullstack {
 
-  renderMember() {
+  renderMember({name, role}) {
     return (
       <div class="xl x2 p1">
-        <b class="xx c12 m1y f2"> Christian Mortaro </b>
-        <h5 class="xx c11 f1"> Front-end dev </h5>
+        <img src="/placeholder.png" />
+        <b class="xx c3 m1t f2"> {name} </b>
+        <h5 class="xx c11 f1"> {role} </h5>
       </div>
     )
   }
 
   render() {
     return (
-      <section class="xxx p4y p2x">
-        <h2 class="xx c3 f7"> Two men army </h2>
+      <section id="equipe" class="xxx p12y p2x">
+        <h3 class="xx c3 f7 ff5 m4b"> Nossa equipe é grande e diversa! </h3>
         <div class="xx">
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-          <Member />
+          <Member name="Dayson" role="Front-end" />
+          <Member name="Christian" role="Back-end" />
+          <Member name="Marx" role="Atendimento" />
+          <Member name="Mortaro" role="DevOps" />
+          <Member name="Tio Marx" role="Financeiro" />
         </div>
         <div class="xx">
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-          <Member />
+          <Member name="Chris" role="Front-end" />
+          <Member name="D-son" role="Back-end" />
+          <Member name="Tio Mortaro" role="Atendimento" />
+          <Member name="Dayson Marx" role="DevOps" />
+          <Member name="Christian Mortaro" role="Financeiro" />
         </div>
       </section>
     )
