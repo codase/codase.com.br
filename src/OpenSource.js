@@ -22,7 +22,7 @@ class OpenSource extends Nullstack {
     return (
       <section class="p12y p2x bg3">
         <div class="xxx">
-          <h2 class="xx c0 f6 m3b"> Papo reto, Código aberto </h2>
+          <h2 class="xx c0 f6 m3b ff5"> Papo reto, Código aberto </h2>
           <p class="xx c0"> 
             Não tem segredo nenhum, nossa experiência nos levou a criar ferramentas que nos tornam mais produtivos.
           </p>

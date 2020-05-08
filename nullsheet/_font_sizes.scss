@@ -13,3 +13,11 @@
     }  
   }
 }
+
+body {
+  @extend .f2;
+}
+
+small {
+  @extend .f1;
+}

@@ -1,13 +1,15 @@
 import Nullstack from 'nullstack';
 
+import {CodaseLogo} from './Logos';
+
 class Header extends Nullstack {
 
   render() {
     return (
       <header class="bg0 s1 ftl">
         <div class="xxx p2x">
-          <div class="xl x6">
-            Logo
+          <div class="xl yy x6">
+            <CodaseLogo height={31} class="x0" />
           </div>
           <nav class="xr x6">
             <a href="/" class="x0 p1x p2y c3"> Sobre </a>

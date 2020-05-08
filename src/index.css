@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+  --primary-family: 'Bree Serif', serif;
+  --secondary-family: 'Varela Round', sans-serif;
+}
