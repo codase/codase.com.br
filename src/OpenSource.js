@@ -6,11 +6,11 @@ class OpenSource extends Nullstack {
 
   renderProject({logo: Logo, description, objective, source, docs}) {
     return (
-      <div class="xx md+x4 p1 sm-m2b">
-        <div class="xx bg4 p3y p6x">
+      <div class="xx md+x4 md+p2 sm-m2b">
+        <div class="xx bg4 p5x sm-p5y md+p7y">
           <Logo height={35} color="#fff" />
-          <p class="xx p1y c0 bc2b"> {description} </p>
-          <small class="xx p1y c0"> {objective} </small>
+          <p class="xx p4y c0 bc2b f1"> {description} </p>
+          <p class="xx p6x p4t p2b p1b c0"> {objective} </p>
           <div class="xx">
             <a href={source} class="xx x0 c6 p1x"> Source </a>
             <span class="c0 x0"> & </span>
@@ -23,13 +23,13 @@ class OpenSource extends Nullstack {
 
   render() {
     return (
-      <section id="open-source" class="p12y p2x bg3">
+      <section id="open-source" class="sm-p9t md+p10t md+p8b p2x bg3">
         <div class="xxx">
-          <h2 class="xx c0 f6 m3b ff5"> Papo reto, Código aberto </h2>
+          <h2 class="xx c0 sm-f4 f6 m5b ff5 sm-m8t"> Papo reto, Código aberto </h2>
           <p class="xx c0"> 
             Não tem segredo nenhum, nossa experiência nos levou a criar ferramentas que nos tornam mais produtivos.
           </p>
-          <p class="xx c0 m3b"> 
+          <p class="xx c0 m5b"> 
             Sabemos quando é hora de reinventar a roda e não temos medo de compartilhar nossas descobertas.
           </p>
           <Project
@@ -51,7 +51,7 @@ class OpenSource extends Nullstack {
           <Project 
             logo={PoisoniconLogo}
             title="Nullsheet"
-            description="More style less bullshit"
+            description="Pick your poison(icon)"
             objective="Reinventamos a roda porque...ficou bonitinho."
             source="https://github.com/poisonicon/poisonicon"
             docs="https://github.com/poisonicon/poisonicon"

@@ -4,12 +4,12 @@ class Hero extends Nullstack {
 
   render() {
     return (
-      <section id="hero" class="p4y p2x p12t" style="background: url(/hero.svg) center; height: 800px;">
+      <section id="hero" class="sm-bg1 p4y p2x sm-p9t p10t">
         <div class="xxl">
-          <div class="xl yt md+x6">
-            <div class="xl">
-              <h1 class="xl c3 f8 m3b ff5"> Desenvolvemos web apps para otimizar processos que te ajudam a parar de perder tempo. </h1>
-              <a href="#contato" class="x0 bg6 c7 x0 p2x p1y s1 "> Nos conte seus problemas </a>
+          <div class="sm-xx xl yt md+x6">
+            <div class="sm-xx xl sm-p3x">
+              <h1 class="sm-xx xl c3 sm-f4 f8 m5b ff5"> Desenvolvemos web apps para otimizar processos que te ajudam a parar de perder tempo. </h1>
+              <a href="#contato" class="x0 bg6 c7 p5x p3y s1"> Nos conte seus problemas </a>
             </div>
           </div>
         </div>

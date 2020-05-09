@@ -14,21 +14,27 @@ class Army extends Nullstack {
 
   render() {
     return (
-      <section id="equipe" class="xxx p12y p2x">
-        <h3 class="xx c3 f7 ff5 m4b"> Nossa equipe é grande e diversa! </h3>
-        <div class="xx">
-          <Member name="Dayson" role="Front-end" />
-          <Member name="Christian" role="Back-end" />
-          <Member name="Marx" role="Atendimento" />
-          <Member name="Mortaro" role="DevOps" />
-          <Member name="Tio Marx" role="Financeiro" />
+      <section id="equipe" class="xxx sm-p8t sm-p4b md+p10t md+p8b p4x">
+        <h3 class="xx sm-m6b m8b c3 sm-f4 f6 ff5"> Nossa equipe é grande e diversa! </h3>
+        <div class="xl" style="overflow-x: auto">
+          <div class="xl sm-p2b" style="min-width: 900px">
+            <Member name="Dayson" role="Front-end" />
+            <Member name="Christian" role="Back-end" />
+            <Member name="Marx" role="Atendimento" />
+            <Member name="Mortaro" role="DevOps" />
+            <Member name="Tio Marx" role="Financeiro" />
+            <Member name="Sr. M" role="UX Designer" />
+          </div>
         </div>
-        <div class="xx">
-          <Member name="Chris" role="Front-end" />
-          <Member name="D-son" role="Back-end" />
-          <Member name="Tio Mortaro" role="Atendimento" />
-          <Member name="Dayson Marx" role="DevOps" />
-          <Member name="Christian Mortaro" role="Financeiro" />
+        <div class="xl" style="overflow-x: auto">
+          <div class="xl sm-p2b" style="min-width: 900px">
+            <Member name="Chris" role="Front-end" />
+            <Member name="D-son" role="Back-end" />
+            <Member name="Tio Mortaro" role="Atendimento" />
+            <Member name="Dayson Marx" role="DevOps" />
+            <Member name="Christian Mortaro" role="Financeiro" />
+            <Member name="Sr. M" role="UX Designer" />
+          </div>
         </div>
       </section>
     )

@@ -5,32 +5,47 @@ $spacers: (
   "p": "padding",
 );
 
+$steps: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.5rem,
+  6: 2rem,
+  7: 3rem,
+  8: 4rem,
+  9: 6rem,
+  10: 8rem,
+  11: 12rem,
+  12: 16rem,
+);
+
 @each $m, $media in $medias {
   @media #{$media} {
     @each $s, $spacer in $spacers {
-      @for $i from 0 through 12 {
+      @each $i, $step in $steps {
         .#{$m}#{$s}#{$i} {
-          #{$spacer}: calc(#{$i} * var(--spacer));
+          #{$spacer}: $step !important;
         }
         .#{$m}#{$s}#{$i}l {
-          #{$spacer}-left: calc(#{$i} * var(--spacer));
+          #{$spacer}-left: $step !important;
         }
         .#{$m}#{$s}#{$i}r {
-          #{$spacer}-right: calc(#{$i} * var(--spacer));
-        }
-        .#{$m}#{$s}#{$i}x {
-          #{$spacer}-left: calc(#{$i} * var(--spacer));
-          #{$spacer}-right: calc(#{$i} * var(--spacer));
+          #{$spacer}-right: $step !important;
         }
         .#{$m}#{$s}#{$i}t {
-          #{$spacer}-top: calc(#{$i} * var(--spacer));
+          #{$spacer}-top: $step !important;
         }
         .#{$m}#{$s}#{$i}b {
-          #{$spacer}-bottom: calc(#{$i} * var(--spacer));
+          #{$spacer}-bottom: $step !important;
         }
         .#{$m}#{$s}#{$i}y {
-          #{$spacer}-top: calc(#{$i} * var(--spacer));
-          #{$spacer}-bottom: calc(#{$i} * var(--spacer));
+          @extend .#{$m}#{$s}#{$i}b;
+          @extend .#{$m}#{$s}#{$i}t;
+        }
+        .#{$m}#{$s}#{$i}x {
+          @extend .#{$m}#{$s}#{$i}l;
+          @extend .#{$m}#{$s}#{$i}r;
         }
       }
     }  

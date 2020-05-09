@@ -9,3 +9,17 @@
 html {
   scroll-behavior: smooth;
 }
+
+#hero {
+  height: 400px;
+}
+
+@media (min-width: 768px) {
+  
+  #hero {
+    background-image: url(/hero.svg);
+    height: 700px;
+    background-position: center;
+  }
+
+}

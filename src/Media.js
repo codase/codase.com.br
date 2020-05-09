@@ -4,7 +4,7 @@ class Media extends Nullstack {
 
   renderPost() {
     return (
-      <div class="xl m2b">
+      <div class="xl m2b sm-m2b">
         <h3 class="f4 ff5"> Titulo do Post </h3>
         <p class="c11"> 
           Lorem ipsum dolor sit amet consectur adipiscing elit integer
@@ -17,7 +17,7 @@ class Media extends Nullstack {
 
   renderPosts() {
     return (
-      <div class="xl md+x6 p3l yy">
+      <div class="xl md+x6 sm-p4y md+p5l yy">
         <Post />
         <Post />
         <Post />
@@ -36,13 +36,13 @@ class Media extends Nullstack {
   renderTags() {
     const tags = ['nullstack', 'nullsheet', 'poisonicon'];
     return (
-      <div class="xx m6t p2y bc1y">
+      <div class="xx p4 bc1y">
         {tags.map((tag) => (
-          <a href={`https://codase.com.br/blog/${tag}`} class="x0 bg6 c7 p1y p2x m1x">{tag}</a>
+          <a href={`https://codase.com.br/blog/${tag}`} class="sm-xx bc0 x6 md+x0 bg6 c7 p2y p4x sm+m1x">{tag}</a>
         ))}
-        <a href={`https://codase.com.br/blog/`} class="x0 bg3 c0 p1y p2x m1x"> Facebook </a>
-        <a href={`https://codase.com.br/blog/`} class="x0 bg3 c0 p1y p2x m1x"> Youtube </a>
-        <a href={`https://codase.com.br/blog/`} class="x0 bg3 c0 p1y p2x m1x"> Instagram </a>
+        <a href={`https://codase.com.br/blog/`} class="sm-xx bc0 x6 md+x0 bg3 c0 p2y p4x sm+m1x"> Facebook </a>
+        <a href={`https://codase.com.br/blog/`} class="sm-xx bc0 x6 md+x0 bg3 c0 p2y p4x sm+m1x"> Youtube </a>
+        <a href={`https://codase.com.br/blog/`} class="sm-xx bc0 x6 md+x0 bg3 c0 p2y p4x sm+m1x"> Instagram </a>
       </div>
     )
   }
@@ -50,8 +50,8 @@ class Media extends Nullstack {
   render() {
     return (
       <section id="midia" class="xx">
-        <div class="xxx p12t p2x">
-          <h3 class="xx m6b c3 f6 ff5"> Quem manja faz parecer simples, não enrola e compartilha! </h3>
+        <div class="xxx sm-p8t md+p10t md+p8b p4x">
+          <h3 class="xx sm-m6b m8b c3 sm-f4 f6 ff5"> Quem manja faz parecer simples, não enrola e compartilha! </h3>
           <Channels />
           <Posts />
         </div>
