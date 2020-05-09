@@ -1,13 +1,7 @@
 import Nullstack from 'nullstack';
 
 import Header from './Header';
-import Hero from './Hero';
-import About from './About';
-import OpenSource from './OpenSource';
-import Media from './Media';
-import Army from './Army';
-import Contact from './Contact';
-import Footer from './Footer';
+import Home from './Home';
 
 class Application extends Nullstack {
 
@@ -37,13 +31,7 @@ class Application extends Nullstack {
     return (
       <div>
         <Header />
-        <Hero />
-        <About />
-        <OpenSource />
-        <Media />
-        <Army />
-        <Contact />
-        <Footer />
+        <Home route="/" />
       </div>
     )
   }
