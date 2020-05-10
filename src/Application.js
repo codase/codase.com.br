@@ -2,6 +2,8 @@ import Nullstack from 'nullstack';
 
 import Header from './Header';
 import Home from './Home';
+import Blog from './Blog';
+import Analytics from './Analytics';
 
 class Application extends Nullstack {
 
@@ -23,15 +25,13 @@ class Application extends Nullstack {
     }
   }
 
-  initiate({metadata}) {
-    metadata.title = "Codase - Software para otimização de processos";
-  }
-
   render({metadata}) {
     return (
       <div>
         <Header />
         <Home route="/" />
+        <Blog route="/blog" />
+        <Analytics id='G-B99CW89FRP' />
       </div>
     )
   }
