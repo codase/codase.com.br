@@ -60,6 +60,16 @@ class Media extends Nullstack {
     )
   }
 
+  render() {
+    return (
+      <div id="midia" class="xx p4 bc1y">
+        <a href={`https://codase.com.br/blog/`} class="sm-xx bc0 x6 md+x0 bg3 c0 p2y p4x sm+m1x"> Facebook </a>
+        <a href={`https://codase.com.br/blog/`} class="sm-xx bc0 x6 md+x0 bg3 c0 p2y p4x sm+m1x"> Youtube </a>
+        <a href={`https://www.instagram.com/codasecombr/`} target="_blank" class="sm-xx bc0 x6 md+x0 bg3 c0 p2y p4x sm+m1x"> Instagram </a>
+      </div>
+    )
+  }
+
 
 }
 

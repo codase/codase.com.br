@@ -12,5 +12,8 @@
     "start": "npx webpack --config node_modules/nullstack/webpack.config.js --mode=development --watch",
     "build": "npx webpack --config node_modules/nullstack/webpack.config.js --mode=production",
     "style": "sass nullsheet/index.scss src/nullsheet.css"
+  },
+  "dependencies": {
+    "nodemailer": "^6.4.6"
   }
 }
