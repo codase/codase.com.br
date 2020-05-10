@@ -4,7 +4,7 @@ class Hero extends Nullstack {
 
   render() {
     return (
-      <section id="hero" class="sm-bg1 p4y p2x sm-p9t p10t">
+      <section id="hero" class="sm-bg1 p8y p2x sm-p9t p10t">
         <div class="xxl">
           <div class="sm-xx xl yt md+x6">
             <div class="sm-xx xl sm-p3x">

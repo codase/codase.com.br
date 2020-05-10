@@ -18,8 +18,24 @@ html {
   
   #hero {
     background-image: url(/hero.svg);
-    height: 700px;
-    background-position: center;
+    height: 850px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+}
+
+#footer {
+  height: 400px;
+}
+
+@media (min-width: 768px) {
+  
+  #footer {
+    background-image: url(/footer.svg);
+    height: 850px;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 
 }
