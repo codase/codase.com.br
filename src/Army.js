@@ -14,7 +14,7 @@ class Army extends Nullstack {
 
   render() {
     return (
-      <section id="equipe" class="xxx sm-p8t sm-p4b md+p10t md+p8b p4x">
+      <section id="equipe" class="xxx sm-p8t sm-p4b md+p10y md+p8b p4x">
         <h3 class="xx sm-m6b m8b c3 sm-f4 f6 ff5"> Nossa equipe é grande e diversa! </h3>
         <div class="xl" style="overflow-x: auto">
           <div class="xl sm-p2b" style="min-width: 900px">

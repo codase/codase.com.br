@@ -6,7 +6,7 @@
   "license": "ISC",
   "devDependencies": {
     "nullstack": "~0.1.0",
-    "poisonicon": "0.0.1"
+    "poisonicon": "0.0.3"
   },
   "scripts": {
     "start": "npx webpack --config node_modules/nullstack/webpack.config.js --mode=development --watch",
