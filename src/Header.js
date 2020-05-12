@@ -62,7 +62,7 @@ class Header extends Nullstack {
               <a href="#" class="md+x0 sm-p3y md+p2x md+p5y sm-bc1b c3" onclick={this.hide} default={true}> Sobre </a>
               <a href="#open-source" class="md+x0 sm-p3y md+p2x md+p5y sm-bc1b c3" onclick={this.hide} default={true}> Open Source </a>
               {/*<a href="/#midia" class="md+x0 sm-p3y md+p2x md+p5y sm-bc1b c3" onclick={this.hide} default={true}> Mídia </a>*/}
-              <a href="#equipe" class="md+x0 sm-p3y md+p2x md+p5y sm-bc1b c3" onclick={this.hide} default={true}> Equipe </a>
+              {/*<a href="#equipe" class="md+x0 sm-p3y md+p2x md+p5y sm-bc1b c3" onclick={this.hide} default={true}> Equipe </a>*/}
               <a href="#contato" class="md+x0 sm-p3y md+p2x md+p5y sm-bc1b c3" onclick={this.hide} default={true}> Contato </a>
               {/*<a href="/blog" class="md+x0 sm-p3y md+p2x md+p5y sm-bc1b c6" onclick={this.hide} default={true}> Blog </a>*/}
             </nav>

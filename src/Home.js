@@ -26,7 +26,6 @@ class Home extends Nullstack {
         <Hero />
         <About />
         <OpenSource />
-        <Army />
         <Contact />
         <Footer />
       </div>

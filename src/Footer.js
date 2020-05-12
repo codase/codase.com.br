@@ -19,10 +19,10 @@ class Footer extends Nullstack {
             </a>
           </div>
           <div class="md+x6 sm-x0 xr yy c3">
-          <a href={`https://facebook.com/codase`} class="x0 xx"><Facebook height={25} class="x0 xx" /></a>
-          <a href={`https://instagram.com/codase`} class="x0 xx m2l"><Instagram height={25} class="x0 xx" /></a>
-          <a href={`https://github.com/codase`} class="x0 xx m2l m2r"><Github height={25} class="x0 xx" /></a>
-          <a href={`https://youtube.com/codase`} class="x0 xx"><Youtube height={30} class="x0 xx" /></a>
+          <a href={`https://facebook.com/codasecombr`} class="x0 xx"><Facebook height={25} class="x0 xx" /></a>
+          <a href={`https://instagram.com/codasecombr`} class="x0 xx m2l"><Instagram height={25} class="x0 xx" /></a>
+          <a href={`https://github.com/codasecombr`} class="x0 xx m2l m2r"><Github height={25} class="x0 xx" /></a>
+          <a href={`https://www.youtube.com/channel/UC5ixX0NsjbMqMRvFsfkdI8g`} class="x0 xx"><Youtube height={30} class="x0 xx" /></a>
           </div>
         </div>
       </section>
