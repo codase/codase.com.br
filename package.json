@@ -4,14 +4,14 @@
   "description": "",
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nullstack": "~0.1.0",
-    "poisonicon": "0.0.1"
-  },
   "scripts": {
     "start": "npx webpack --config node_modules/nullstack/webpack.config.js --mode=development --watch",
-    "build": "npx webpack --config node_modules/nullstack/webpack.config.js --mode=production",
-    "style": "sass nullsheet/index.scss src/nullsheet.css"
+    "build": "npx webpack --config node_modules/nullstack/webpack.config.js --mode=production"
+  },
+  "devDependencies": {
+    "nullstack": "~0.1.0",
+    "poisonicon": "0.0.1",
+    "nullsheet": "0.0.1"
   },
   "dependencies": {
     "nodemailer": "^6.4.6"

@@ -1,4 +1,4 @@
-import './nullsheet.css';
+import 'nullsheet';
 import './index.css';
 
 import Application from './Application';
