@@ -2,7 +2,7 @@ import Nullstack from 'nullstack';
 
 import {CodaseLogo} from './Logos';
 
-import Hamburger from 'poisonicon/menu/fill';
+import Bars from 'poisonicon/bars/fill';
 import Ex from 'poisonicon/ex/fill';
 import Arrow from 'poisonicon/arrow/fill';
 
@@ -14,7 +14,6 @@ class Header extends Nullstack {
 
   initiate({environment}) {
     if(environment.client) {
-      let timer;
       window.addEventListener('scroll', () => {
         this.scrolls++;
         if(this.scrolls == 10) {
@@ -53,7 +52,7 @@ class Header extends Nullstack {
             }
             {!this.visible &&
               <button class="x0" onclick={this.show}>
-                <Hamburger height={16} class="x0 c3" />
+                <Bars height={16} class="x0 c3" />
               </button>
             }
           </div>

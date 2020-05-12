@@ -25,7 +25,7 @@ class Application extends Nullstack {
     }
   }
 
-  render({metadata}) {
+  render() {
     return (
       <div>
         <Header />

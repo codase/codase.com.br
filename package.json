@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "nullstack": "~0.1.0",
-    "poisonicon": "0.0.1",
+    "poisonicon": "0.0.3",
     "nullsheet": "0.0.1"
   },
   "dependencies": {
