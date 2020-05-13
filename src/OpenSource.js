@@ -24,7 +24,7 @@ class OpenSource extends Nullstack {
   render() {
     return (
       <section id="open-source" class="sm-p9t md+p11t md+p8b p2x bg3">
-        <div class="xxx p8y">
+        <div class="xxx p8t md+p8b">
           <h2 class="xx c0 sm-f4 f6 m5b ff5 sm-m8t"> Papo reto, Código aberto </h2>
           <p class="xx c0"> 
             Não tem segredo nenhum, nossa experiência nos levou a criar ferramentas que nos tornam mais produtivos.
