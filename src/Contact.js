@@ -4,13 +4,14 @@ class Contact extends Nullstack {
 
   name = '';
   contact = '';
-  message = 'Olá,';
+  message = '';
 
   error = '';
 
   sent = false;
 
   static async deliverEmail({name, contact, message}) {
+    console.log({name, contact, message});
     const {default: nodemailer} = await import('nodemailer');
     const mailTransport = nodemailer.createTransport({    
       host: "smtpout.secureserver.net",  
@@ -54,7 +55,7 @@ class Contact extends Nullstack {
     return (
       <form class="xxx p2x md+p12x" onsubmit={this.send}>
         <h2 class="xx c3 sm-f3 f6 ff5"> Com qual setor você quer falar? </h2>
-        <p class="xx c11 m1t"> Brinks, deixe sua mensagem abaixo ou envie um email para </p>
+        <p class="xx c11 m1t"> Deixe sua mensagem abaixo ou envie um email para </p>
         <div class="xx m5b">
           <a href="mailto:contato@codase.com.br" class="c3 x0 m1l">contato@codase.com.br</a>
         </div>

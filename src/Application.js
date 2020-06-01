@@ -2,13 +2,15 @@ import Nullstack from 'nullstack';
 
 import Header from './Header';
 import Home from './Home';
-import Blog from './Blog';
 import Analytics from './Analytics';
 
 class Application extends Nullstack {
 
-  static async initiate(context) {
+  static async start(context) {
     context.port = 21002;
+    context.project.name = "Codase";
+    context.project.domain = "codase.com.br";
+    context.project.color = "#6B46C1";
   }
 
   initialize({environment}) {
@@ -30,7 +32,6 @@ class Application extends Nullstack {
       <div>
         <Header />
         <Home route="/" />
-        <Blog route="/blog" />
         <Analytics id='G-B99CW89FRP' />
       </div>
     )

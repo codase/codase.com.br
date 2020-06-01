@@ -1,6 +1,7 @@
 import 'nullsheet';
-import './index.css';
+import './Application.css';
 
+import Nullstack from 'nullstack';
 import Application from './Application';
 
-Application.initialize();
+Nullstack.start(Application);
